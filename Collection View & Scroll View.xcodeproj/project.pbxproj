@@ -18,6 +18,11 @@
 		984D2AE32788A03A00CA8C46 /* Collection_View___Scroll_ViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D2AE22788A03A00CA8C46 /* Collection_View___Scroll_ViewUITestsLaunchTests.swift */; };
 		984D2AF32788A10200CA8C46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D2AF12788A10200CA8C46 /* HomeViewController.swift */; };
 		984D2AF42788A10200CA8C46 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984D2AF22788A10200CA8C46 /* HomeViewController.xib */; };
+		984D2AF72788E5D200CA8C46 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D2AF52788E5D200CA8C46 /* ScrollViewController.swift */; };
+		984D2AF82788E5D200CA8C46 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984D2AF62788E5D200CA8C46 /* ScrollViewController.xib */; };
+		984D2AFB2788EC2E00CA8C46 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D2AFA2788EC2E00CA8C46 /* File.swift */; };
+		984D2AFF2788ED0D00CA8C46 /* Item CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D2AFD2788ED0D00CA8C46 /* Item CollectionViewCell.swift */; };
+		984D2B002788ED0D00CA8C46 /* Item CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984D2AFE2788ED0D00CA8C46 /* Item CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		984D2AE22788A03A00CA8C46 /* Collection_View___Scroll_ViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection_View___Scroll_ViewUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		984D2AF12788A10200CA8C46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		984D2AF22788A10200CA8C46 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		984D2AF52788E5D200CA8C46 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		984D2AF62788E5D200CA8C46 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		984D2AFA2788EC2E00CA8C46 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		984D2AFD2788ED0D00CA8C46 /* Item CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item CollectionViewCell.swift"; sourceTree = "<group>"; };
+		984D2AFE2788ED0D00CA8C46 /* Item CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Item CollectionViewCell.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,8 @@
 		984D2ABB2788A03800CA8C46 /* Collection View & Scroll View */ = {
 			isa = PBXGroup;
 			children = (
+				984D2AFC2788ECD600CA8C46 /* cells */,
+				984D2AF92788EC1800CA8C46 /* models */,
 				984D2AF02788A0E700CA8C46 /* controllers */,
 				984D2AEF2788A0BB00CA8C46 /* apputils */,
 				984D2ABC2788A03800CA8C46 /* AppDelegate.swift */,
@@ -145,8 +157,27 @@
 			children = (
 				984D2AF12788A10200CA8C46 /* HomeViewController.swift */,
 				984D2AF22788A10200CA8C46 /* HomeViewController.xib */,
+				984D2AF52788E5D200CA8C46 /* ScrollViewController.swift */,
+				984D2AF62788E5D200CA8C46 /* ScrollViewController.xib */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		984D2AF92788EC1800CA8C46 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				984D2AFA2788EC2E00CA8C46 /* File.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		984D2AFC2788ECD600CA8C46 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				984D2AFD2788ED0D00CA8C46 /* Item CollectionViewCell.swift */,
+				984D2AFE2788ED0D00CA8C46 /* Item CollectionViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +286,8 @@
 			files = (
 				984D2ACC2788A03A00CA8C46 /* LaunchScreen.storyboard in Resources */,
 				984D2AC92788A03A00CA8C46 /* Assets.xcassets in Resources */,
+				984D2B002788ED0D00CA8C46 /* Item CollectionViewCell.xib in Resources */,
+				984D2AF82788E5D200CA8C46 /* ScrollViewController.xib in Resources */,
 				984D2AC42788A03800CA8C46 /* Main.storyboard in Resources */,
 				984D2AF42788A10200CA8C46 /* HomeViewController.xib in Resources */,
 			);
@@ -282,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				984D2ABD2788A03800CA8C46 /* AppDelegate.swift in Sources */,
+				984D2AFB2788EC2E00CA8C46 /* File.swift in Sources */,
 				984D2AC72788A03800CA8C46 /* Collection_View___Scroll_View.xcdatamodeld in Sources */,
+				984D2AF72788E5D200CA8C46 /* ScrollViewController.swift in Sources */,
+				984D2AFF2788ED0D00CA8C46 /* Item CollectionViewCell.swift in Sources */,
 				984D2ABF2788A03800CA8C46 /* SceneDelegate.swift in Sources */,
 				984D2AF32788A10200CA8C46 /* HomeViewController.swift in Sources */,
 			);
