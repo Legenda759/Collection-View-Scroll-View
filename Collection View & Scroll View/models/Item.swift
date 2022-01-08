@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Item.swift
 //  Collection View & Scroll View
 //
 //  Created by Legenda_759 on 08/01/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class item {
+class Item {
     
     var title: String?
     var image: String?
